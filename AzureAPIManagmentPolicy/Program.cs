@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//All models in AzureAPIManagementPolicy.Models are build from the documentation link below
+//https://docs.microsoft.com/en-us/azure/api-management/api-management-policy-expressions#ref-iapi
 
 using AzureAPIManagementPolicy.Models;
 
@@ -24,7 +25,7 @@ TestCodeBlock(context);
 /// </summary>
 void SetupContextDefaults(Context context)
 {
-    context.Request = new Request
+    context.Request = new Request()
     {
         Url = { Host = "sample.host", Path = "/sample/path", Scheme = "https" },
         Method = "GET"
@@ -36,7 +37,7 @@ void SetupContextDefaults(Context context)
 /// </summary>
 string TestCodeBlock(Context context)
 {
-    //<policy-tag>@{
-    return null;
-    //}</policy-tag>
+	//<policy-tag>@{
+	return null;
+	//}</policy-tag>
 }
