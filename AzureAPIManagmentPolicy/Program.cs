@@ -27,7 +27,7 @@ void SetupContextDefaults(Context context)
 {
     context.Request = new Request()
     {
-        Url = { Host = "sample.host", Path = "/sample/path", Scheme = "https" },
+        Url = new Url() { Host = "sample.host", Path = "/sample/path", Scheme = "https" },
         Method = "GET"
     };
 }

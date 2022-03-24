@@ -10,8 +10,8 @@ namespace AzureAPIManagementPolicy.Models
         public string IpAddress { get; set; }
         public IReadOnlyDictionary<string, string> MatchedParameters { get; set; }
         public string Method { get; set; }
-        public IUrl OriginalUrl { get; set; }
-        public IUrl Url { get; set; }
+        public Url OriginalUrl { get; set; }
+        public Url Url { get; set; }
         public IPrivateEndpointConnection? PrivateEndpointConnection { get; set; }
     }
 }
